@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 25px;
+}
+
+header{
+    background-color: #ddd;
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 2em;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid black;
+}
+
+h1{
+    margin: 0;
+}
+
+small {
+    opacity: .5;
+    font-size: 70%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 50px 0 50px;
+    padding: 0;
+}
+
+.nav{
+    width:250px;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: auto;
+    padding: .5em;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav li{
+    width:40px;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    line-height: 50px;
+    width:40px;
+    height: 50px;
+    text-decoration: none;
+    color: #333;
+}
+
+.questions{
+    width: 900px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.question{
+    margin:50px;
+    display: none;
+}
+
+.active {
+    border: 0px solid #333;
+    border-bottom: 4px;
+    border-style: groove;
+}
+
+.buttons{
+    float: right;
+    margin: 25px 50px;
+}
