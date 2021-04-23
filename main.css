@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue: #05659E;
+    --yellow: #DBA531;
+    --orange: #D85426;
+    --cream: #E5E8C7;
+    --dark: #43516C;
+    --shadow: #43516C 1px 1px 5px;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: var(--cream);
+    color: rgba(0,0,0,0.8);
+}
+
+header{
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--cream);
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+header h1{
+    font-size: 3.5em;
+}
+
+header h3{
+    opacity: .85;
+}
+header h3::before{
+    content: "";
+    padding: 80px;
+}
+
+main{
+    padding:50px;
+}
+
+main h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin :10px;
+    min-width: 350px;
+    max-width: 400px;
+    height: 400px;
+    position: relative;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.card .heading{
+    position: absolute;
+    bottom: -60px;
+    background-color: var(--orange);
+    padding: 20px 0; 
+    width:100%;
+    text-align: center;
+    transition: all .5s;
+    opacity: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.lists a, a:visited{
+    text-decoration: none;
+    color: var(--cream);
+}
+
+.lists a:hover .card{
+    opacity : 1;
+}
+
+
+.card:hover .heading{
+    bottom:0;
+    opacity: 1;
+}
+
+#flappyBird{
+    background-image: url(assets/flappyBird.png);
+}
+
+#carGame{
+    background-image: url(assets/carGame.png);
+}
+
+#carGame2{
+    background-image: url(assets/carGame2.png);
+}
+
+#spaceShooter{
+    background-image: url(assets/spaceShooter.png);
+}
+
+#pingPong{
+   background-image: url(assets/pingPong.png);
+}
+
+#snakeLadder{
+    background-image: url(assets/snakeLadder.png);
+}
