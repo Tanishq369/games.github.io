@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #endScreen{
+            font-family: sans-serif;
+            position: absolute;
+            top:200px;
+            left:50px;
+            text-align: center;
+            background-color: red;
+            padding: 50px;
+            border-radius: 5px;
+            transform: scale(0,0);
+            transition: all .5s;
+        }
+        #endScreen h1, h2{
+            margin: 10px;
+        }
+        #scoreBoard {
+            font-family: sans-serif;
+            position: absolute;
+            top:0px;
+            left:0px;
+            text-align: center;
+            color: rgba(255, 255, 255, .8);
+            padding: 30px;
+            font-size: 20px;
+        }
+    
+        </style>
+    
+    <title>Car Game</title>
+</head>
+<body>
+    <canvas id="canvas" width="400px" height="600px"></canvas>
+    <script src="car.js"></script>
+    <script src="line.js"></script>
+    <script src="oil.js"></script>
+    <script src="otherCar.js"></script>
+    <script src="script.js"></script>
+
+    <span id="scoreBoard">0</span>
+    <div id="endScreen">
+        <h1>Your Score</h1>
+        <h2 id="score">0</h2>
+        <button onclick="reset()" autofocus>New Game</button>
+    </div>
+
+</body>
+</html>
