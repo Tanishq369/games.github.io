@@ -16,7 +16,10 @@ body{
     background-color: var(--cream);
     color: rgba(0,0,0,0.8);
 }
-
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
 header{
     text-align: center;
     background-color: var(--blue);
