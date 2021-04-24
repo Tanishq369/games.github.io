@@ -19,6 +19,7 @@ body{
 .logo{
     width: 100px;
     cursor: pointer;
+    text-align: left;
 }
 header{
     text-align: center;
