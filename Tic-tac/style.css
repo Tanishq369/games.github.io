@@ -13,9 +13,10 @@
   
   .container {
     background: #14BDAC;
-    margin: 50px;
+    margin: 10px;
     padding: 50px;
     border-radius: 25px;
+    background-size: cover;
   }
   
   .title {
@@ -61,8 +62,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 200px;
-    width: 200px;
+    height: 125px;
+    width: 125px;
   }
   
   .x,
